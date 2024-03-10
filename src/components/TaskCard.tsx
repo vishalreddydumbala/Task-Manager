@@ -21,7 +21,7 @@ const TaskCard = (props: Props) => {
     const {task, deleteTask, updateTask} = props;
 
 
-    const { setNodeRef, attributes, listeners, transform, transition, isDragging } = useSortable({
+    const { setNodeRef, attributes, listeners, transform, transition} = useSortable({
         id: task.id,
         data: {
             type: 'Task',
